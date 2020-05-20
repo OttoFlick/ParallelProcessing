@@ -6,11 +6,9 @@ import java.util.Date;
 import java.util.List;
 
 public class Restaurant {
-    private int numberOfTables;
     private List<Table> tables;
 
     public Restaurant(int numberOfTables) {
-        this.numberOfTables = numberOfTables;
         this.tables = new ArrayList<>(numberOfTables);
         for (int i = 0; i < numberOfTables; i++){
             this.tables.add(new Table());
@@ -18,7 +16,7 @@ public class Restaurant {
     }
 
     public int getNumberOfTables() {
-        return this.numberOfTables;
+        return this.tables.size();
     }
 
     public void useTable(int tableIndex){

@@ -13,7 +13,7 @@ public class Customer implements Runnable {
 
     @Override
     public void run() {
-        while (true) {
+        for(int i = 0; i < 1; i++) {
             Random r = new Random();
             int delay = r.nextInt(3000 - 1000) + 1000;
             try {
